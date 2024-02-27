@@ -1,0 +1,408 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 70vw;
+    gap:50px;
+    
+}
+
+.block-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.block-text{
+    width: 30vw;
+}
+
+.block-input-info{
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 15px;
+    padding: 3%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.8em;
+    color: white;
+}
+
+.block-input-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 63vh;
+    width: 30vw;
+    border-radius: 8px;
+}
+.block-input-form.grow{
+    height: 68vh;    
+}
+
+input[type="submit"]{
+    background-color:hsl(154, 59%, 51%) ;
+    border: none;
+    padding: 0;
+    color: white;
+    margin-bottom: 0;
+    cursor: pointer;
+    
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+input{
+    margin:12px 0 3px 0;
+    height: 3vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    border:1px solid hsl(246, 25%, 77%);
+    
+}
+
+h4{
+    font-size: 0.6em;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+   
+    
+}
+h4 a{
+    color:hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+h3{
+    color:white ;
+}
+h3 span{
+    color: hsl(246, 25%, 77%);
+}
+
+h2{
+    font-size: 0.8em;
+    color: rgba(255, 255, 255,0.7);
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+input.error{
+    border: 1px solid red;
+}
+
+form p{
+    font-size: 0.5em;
+    color: red;
+    text-align: right;
+   display: none;
+}
+
+.p-email{
+    position: relative;
+    right: 3%;
+    top:0%;
+}
+
+.p-password{
+    position: relative;
+    right: 3%;
+    top:0%;
+}
+
+.p-lname{
+    position: relative;
+    right: 3%;
+    top:0%;
+}
+
+.p-fname{
+    position: relative;
+    right: 3%;
+    top:0%;
+}
+
+form p.visible{
+    display: flex;
+    justify-content: flex-end;
+}
+
+form img{
+    width:15px;
+    height: 15px;
+    display: none;
+    
+}
+
+form img.icon-error-visible{
+    display:flex;
+}
+
+.icon-error-name{
+    position:relative;
+    left: 93%;
+    top:11%;
+}
+
+.icon-error-fname{
+    position:relative;
+    left: 93%;
+    top:11%;
+}
+
+.icon-error-email{
+    position:relative;
+    left: 93%;
+    top:11%;
+}
+
+.icon-error-password{
+    position:relative;
+    left: 93%;
+    top: 11%;
+}
+
+/* responsive design for 376px screens */
+@media screen and (max-width:376px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .block-input-form.grow{
+        height: 57vh;    
+    }
+
+    .block-input-form{
+        height: 45vh;
+        width: 60vw;
+    }
+
+    h1{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    .block-text{
+        width: 80vw;
+        text-align: center;
+    }
+    input{
+        margin:8px 0 0 0;
+        height: 10vw; 
+    }
+
+    .block-input-info{
+        width: 60vw;
+    }
+    
+footer{
+    display: none;
+}
+}
+
+/* responsive design for 539px screens */
+@media screen and (min-width:377px) and (max-width:539px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .block-input-form.grow{
+        height: 50vh;    
+    }
+
+    .block-input-form{
+        height: 40vh;
+        width: 60vw;
+    }
+
+    h1{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    .block-text{
+        width: 80vw;
+        text-align: center;
+    }
+    input{
+        margin:8px 0 0 0;
+        height: 10vw; 
+    }
+
+    .block-input-info{
+        width: 60vw;
+    }
+    
+footer{
+    display: none;
+}
+}
+
+/* responsive design for 820px screens */
+@media screen and (min-width:540px) and (max-width:819px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .block-input-form.grow{
+        height: 68vh;    
+    }
+
+    .block-input-form{
+        height: 55vh;
+        width: 60vw;
+    }
+
+    h1{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    .block-text{
+        width: 80vw;
+        text-align: center;
+    }
+    input{
+        margin:8px 0 0 0;
+        height: 10vw; 
+    }
+
+    .block-input-info{
+        width: 60vw;
+    }
+    
+footer{
+    display: none;
+}
+}
+
+/* responsive design for 820px screens */
+@media screen and (min-width:820px) and (max-width:990px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .block-input-form.grow{
+        height: 45vh;    
+    }
+
+    .block-input-form{
+        height: 40vh;
+        width: 60vw;
+    }
+
+    h1{
+        font-size: 2.6em;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .block-text{
+        width: 80vw;
+        text-align: center;
+    }
+    input{
+        margin:8px 0 0 0;
+        height: 8vw; 
+    }
+
+    .block-input-info{
+        width: 60vw;
+    }
+    
+footer{
+    display: none;
+}
+}
+
+/* responsive design for 1024px screens */
+@media screen and (width:1024px) and (height:1366px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    .block-input-form.grow{
+        height: 50vh;    
+    }
+
+    .block-input-form{
+        height: 40vh;
+        width: 55vw;
+    }
+
+    h1{
+        font-size: 2.6em;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .block-text{
+        width: 80vw;
+        text-align: center;
+    }
+    input{
+        margin:8px 0 0 0;
+        height: 8vw; 
+    }
+
+    .block-input-info{
+        width: 55vw;
+    }
+    
+footer{
+    display: none;
+}
+}
+
+@media screen and (width:1024px) and (height:600px){
+    .block-input-form.grow{
+        height: 66vh;    
+    }
+
+    .block-input-form{
+        height: 50vh;
+        
+    }
+
+}
+
+@media screen and (width:1280px) and (height:800px){
+    .block-input-form.grow{
+        height: 55vh;    
+    }
+
+    .block-input-form{
+        height: 50vh;
+        
+    }
+
+}
